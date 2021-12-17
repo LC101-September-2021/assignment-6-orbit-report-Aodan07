@@ -6,7 +6,11 @@
         <th>Orbit Type</th>
         <th>Launch Date</th>
     </tr>
+    <tr class="data-row" *ngFor="#item of displayList">
+        <td><h1>{{item.name}}</h1></td>
+    </tr>
     <tr class="data-row">
+
         <td>GPS 938</td>
         <td>Positioning</td>
         <td>true</td>
