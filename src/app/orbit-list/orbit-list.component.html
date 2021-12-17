@@ -6,13 +6,13 @@
         <th>Orbit Type</th>
         <th>Launch Date</th>
     </tr>
-    <tr class="data-row" *ngFor="item of displayList" > 
+    <tr class="data-row" *ngFor="let item of displayList" > 
         
-        <td>GPS 938</td>
-        <td>Positioning</td>
-        <td>true</td>
-        <td>HIGH</td> 
-        <td>2001-11-01</td>
+        <td>{{item.Name}}</td>
+        <td>{{item.Type}}</td>
+        <td>{{item.Operational}}</td>
+        <td>{{item.OrbitType}}</td> 
+        <td>{{item.LaunchDate}}</td>
     </tr>
 </table>
 
