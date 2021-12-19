@@ -13,11 +13,19 @@ export class Satellite {
 		this.orbitType = orbitType;
 		this.operational = operational;
    }
-	
-	isSpaceDebris(): boolean {
-		return true;
-   }
-
+   
+	isSpaceDebris(): boolean {	
+		
+		if(this.type==="Space Debris"){
+			console.log("this.type!" + this.type)
+			console.log("returning true")
+			return true;
+    }else{
+		console.log("this.type!" + this.type)
+			console.log("returning false")
+		return false;
+	}
+		}
 }
 
 // TODO 3a: fix isSpaceDebris check
